@@ -14,10 +14,10 @@ public class ZahlenRaten {
 			System.out.println("Zahl: " + zahl + "?");
 			antwort = ConsoleReader.readString("Ja oder Nein?");
 			if (antwort.equals("nein")) {
-				unterschied = Math.abs(zahl - zahl_alt) / 2;
-				if (unterschied == 0) {
-					unterschied = 1;
-				}
+				unterschied = Math.max(Math.abs(zahl - zahl_alt) / 2, 1);
+//				if (unterschied == 0) {
+//					unterschied = 1;
+//				}
 				zahl_alt = zahl;
 				System.out.println( zahl + " zu gross?");
 				antwort = ConsoleReader.readString("Ja oder Nein?");

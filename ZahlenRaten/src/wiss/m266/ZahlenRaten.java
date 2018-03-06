@@ -29,6 +29,7 @@ public class ZahlenRaten {
 			} else {
 				antwort = "erraten!";
 				System.out.println("erraten!");
+				System.out.println("HAHAHA");
 			}
 		}while(!antwort.equals("erraten!"));
 	}
